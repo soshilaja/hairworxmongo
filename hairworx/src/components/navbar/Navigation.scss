@@ -1,0 +1,109 @@
+// .navbar {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   background-color: #57dbd8;
+//   color: black;
+//   transition: 0.5s all ease-in-out;
+//   position: sticky;
+//   top: 0;
+//   z-index: 1000;
+
+//   &.active {
+//     background-color: #ffffff;
+//     color: black;
+//   }
+//   .container {
+//     width: 100%;
+//     max-width: 1400px;
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 20px 0px;
+
+//     .logo {
+//       font-size: 34px;
+//       font-weight: bold;
+//       // .text {
+//       // }
+//     }
+//     .links {
+//       display: flex;
+//       align-items: center;
+//       gap: 24px;
+//       font-weight: 500;
+//       .user {
+//         display: flex;
+//         align-items: center;
+//         gap: 10px;
+//         cursor: pointer;
+//         position: relative;
+
+//         img {
+//           border-radius: 50%;
+//           width: 32px;
+//           height: 32px;
+//           object-fit: cover;
+//         }
+//         .options {
+//           position: absolute;
+//           top: 50px;
+//           left: 0px;
+//           background-color: white;
+//           border-radius: 5px;
+//           padding: 10px;
+//           box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+//           display: flex;
+//           flex-direction: column;
+//           gap: 10px;
+//           width: 200px;
+//           span {
+//             cursor: pointer;
+//             &:hover {
+//               text-decoration: underline;
+//             }
+//           }
+//         }
+//       }
+//       button {
+//         color: black;
+//         padding: 10px 20px;
+//         border-radius: 5px;
+//         border: 1px solid black;
+//         cursor: pointer;
+//         background-color: transparent;
+//         &:hover {
+//           background-color: #25388e;
+//           border-color: #25388e;
+//           color: white;
+//         }
+//       }
+//     }
+//   }
+//   hr {
+//     width: 100%;
+//     height: 0;
+//     border: 0.5px solid lightgray;
+//   }
+//   .menu {
+//     width: 100%;
+//     max-width: 1400px;
+//     padding: 10px 0px;
+//     display: flex;
+//     justify-content: space-between;
+//     font-weight: 200;
+//   }
+// }
+
+.link {
+  // color: black;
+  padding: 0px 5px;
+  border-radius: 5px;
+  // border: 1px solid black;
+  cursor: pointer;
+  background-color: transparent;
+  &:hover {
+    // background-color: #25388e;
+    //   border-color: #25388e;
+    color: black;
+  }
+}

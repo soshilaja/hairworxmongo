@@ -1,0 +1,145 @@
+.message {
+  display: flex;
+  justify-content: center;
+  background-color: #ffebeb;
+
+  .container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px;
+
+    .breadcrumbs {
+      font-weight: 300;
+      font-size: 12px;
+      color: #555;
+    }
+
+    .messages {
+      margin: 20px 0;
+      padding-top: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-height: 400px;
+      overflow-y: scroll;
+
+      .item {
+        display: flex;
+        gap: 20px;
+        max-width: 600px;
+        font-size: 18px;
+
+        &.owner {
+          flex-direction: row-reverse;
+          align-self: flex-end;
+
+          p {
+            background-color: #bd7b7b;
+            color: #ffffff;
+            border-radius: 20px;
+          }
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        p {
+          padding: 20px;
+          background-color: #eee;
+          border-radius: 20px;
+          color: #555;
+          font-weight: 300;
+        }
+      }
+    }
+
+    hr {
+      height: 0.5px;
+      border: none;
+      background-color: #808080;
+      margin-bottom: 20px;
+    }
+
+    .write {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      textarea {
+        width: 80%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+
+      button {
+        background-color: #1dbf73;
+        padding: 20px;
+        color: #fff;
+        font-weight: 500;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        width: 100px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #087a45;
+          color: #fff;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      margin: 10px;
+
+      .breadcrumbs {
+        font-size: 10px;
+      }
+
+      .messages {
+        padding-top: 50px;
+
+        .item {
+          font-size: 14px;
+
+          img {
+            width: 25px;
+            height: 25px;
+          }
+
+          p {
+            padding: 10px;
+          }
+        }
+      }
+
+      hr {
+        margin-bottom: 8px;
+      }
+
+      .write {
+        textarea {
+          height: 60px;
+          padding: 8px;
+          font-size: 12px;
+        }
+
+        button {
+          padding: 12px;
+          font-size: 12px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.slide {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+  background-color: #f5f5f5;
+
+  .container {
+    width: 100%;
+    max-width: 1400px;
+
+    h1 {
+      font-weight: 500;
+      margin-bottom: 20px;
+      font-size: 24px; /* Adjusted font size for mobile screens */
+    }
+
+    .slick-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slick-prev,
+    .slick-next {
+      z-index: 1;
+      width: 20px;
+      height: 20px;
+      background-color: #7a7a7a;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 20px;
+    }
+  }
+}

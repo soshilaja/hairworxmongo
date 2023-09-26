@@ -1,0 +1,108 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  color: gray;
+  margin: 30px 0px;
+  img {
+    width: 20px;
+  }
+  .container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 20px;
+
+    .top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      .company {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+        h2 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 10px;
+          color: #555;
+        }
+        span {
+          font-size: 14px;
+          line-height: 1.5;
+        }
+      }
+      .categories,
+      .usefulLinks,
+      .contact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 20px;
+        h2 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 10px;
+          color: #555;
+        }
+        span {
+          font-size: 14px;
+          line-height: 1.5;
+          margin-bottom: 10px;
+          cursor: pointer;
+          &:hover {
+            color: #ff4d4d;
+          }
+        }
+      }
+    }
+
+    hr {
+      margin: 20px 0px;
+      height: 0.5px;
+      border: none;
+      background-color: lightgrey;
+    }
+
+    .bottom {
+      display: flex;
+      // flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+
+      .left {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 20px;
+        span {
+          font-size: 14px;
+          color: #555;
+        }
+      }
+
+      .right {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 20px;
+        gap: 30px;
+        .social,
+        .link {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          img {
+            cursor: pointer;
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+          span {
+            font-size: 15px;
+            color: #555;
+          }
+        }
+      }
+    }
+  }
+}

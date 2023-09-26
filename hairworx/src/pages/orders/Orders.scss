@@ -1,0 +1,122 @@
+.orders {
+  display: flex;
+  justify-content: center;
+  background-color: #ffebeb;
+
+  .container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 10px;
+
+    .title {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;;
+      margin-bottom: 50px;
+
+      h1 {
+        font-size: 24px; /* Adjusted font size for mobile screens */
+        font-weight: 700;
+        margin-bottom: 10px; /* Adjusted margin for mobile screens */
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #1dbf73;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 16px; /* Adjusted font size for mobile screens */
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #1dbf73;
+          color: #fff;
+          opacity: 0.8;
+        }
+      }
+    }
+
+    table {
+      width: 100%;
+
+      tr {
+        height: 50px;
+
+        th {
+          text-align: left;
+          padding: 10px 0px;
+          font-size: 18px; /* Adjusted font size for mobile screens */
+          font-weight: 700;
+          color: #000000;
+        }
+
+        td {
+          padding: 10px 0px;
+          font-size: 16px; /* Adjusted font size for mobile screens */
+          font-weight: 500;
+          color: #000;
+
+          img {
+            width: 24px; /* Adjusted image size for mobile screens */
+            height: 24px; /* Adjusted image size for mobile screens */
+            object-fit: cover;
+          }
+
+          .message {
+            width: 24px; /* Adjusted image size for mobile screens */
+            height: 24px; /* Adjusted image size for mobile screens */
+            object-fit: cover;
+            cursor: pointer;
+          }
+        }
+
+        &:nth-child(even) {
+          background-color: #e8acac;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+
+      .title {
+        margin-bottom: 50px;
+
+        h1 {
+          font-size: 24px;
+          margin-bottom: 5px;
+        }
+
+        button {
+          padding: 8px 16px;
+          font-size: 14px;
+        }
+      }
+
+      table {
+        tr {
+          height: auto;
+
+          th,
+          td {
+            padding: 5px 0px;
+            font-size: 14px;
+
+            img,
+            .message {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
