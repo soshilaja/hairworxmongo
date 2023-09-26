@@ -4,5 +4,6 @@
     "name": "Application-1",
     "location": "US-VA",
     "provider_region": "azure-eastus2",
-    "deployment_model": "LOCAL"
+    "deployment_model": "LOCAL",
+    "environment": "production"
 }
